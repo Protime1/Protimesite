@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru" id="html-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cleaner Pro 2025 — Мощная очистка Windows</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Иконка (опционально) -->
+  <!-- <link rel="icon" href="favicon.ico" /> -->
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        ⚡ Cleaner<b>Pro</b>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="#products">Продукты</a></li>
+          <li><a href="#about">О разработчике</a></li>
+          <li><a href="#pro-team">Pro Team</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn" aria-label="Переключить тему">
+          🌙
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Герой -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>⚡ Cleaner Pro 2025</h1>
+      <p>Максимальная очистка, оптимизация и защита вашей Windows</p>
+      <a href="#products" class="btn-primary">Посмотреть продукты</a>
+    </div>
+  </header>
+
+  <!-- Продукты -->
+  <section id="products" class="section">
+    <div class="container">
+      <h2 class="section-title">Наши продукты</h2>
+      <div class="products-grid">
+        <!-- Cleaner PC -->
+        <div class="product-card">
+          <div class="product-icon">🧹</div>
+          <h3>Cleaner Pro 2025</h3>
+          <p>Удаляет временные файлы, кэш, мусор. Освобождает до 30+ ГБ.</p>
+          <a href="https://github.com/Protime1/CleanerPro2025/releases/latest" target="_blank" class="btn-download">
+            Скачать последнюю версию
+          </a>
+        </div>
+
+        <!-- Антивирус (скоро) -->
+        <div class="product-card disabled">
+          <div class="product-icon">🛡️</div>
+          <h3>Pro Antivirus 2026</h3>
+          <p>ИИ-защита от вирусов, троянов и шпионского ПО. В разработке.</p>
+          <span class="soon-badge">Скоро</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О разработчике -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">О разработчике</h2>
+      <p class="text-center">
+        Привет! Я независимый разработчик из России, создаю инструменты для оптимизации Windows с 2023 года.  
+        Моя цель — сделать мощные, безопасные и бесплатные утилиты для всех пользователей.
+      </p>
+      <p class="text-center">
+        Все мои проекты с открытым исходным кодом. Вы можете проверить каждый байт!
+      </p>
+    </div>
+  </section>
+
+  <!-- Pro Team -->
+  <section id="pro-team" class="section">
+    <div class="container">
+      <h2 class="section-title">Pro Team</h2>
+      <p class="text-center">
+        В данный момент проект разрабатывается одним человеком (мной).  
+        Но я открыт к сотрудничеству! Если вы дизайнер, тестировщик или разработчик — пишите в Telegram.
+      </p>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Cleaner Pro. Все права защищены.</p>
+      <p>
+        <a href="https://github.com/Protime1/CleanerPro2025" target="_blank">GitHub</a> |
+        <a href="https://t.me/Protime1" target="_blank">Telegram</a>
+      </p>
+      <p class="footer-note">
+        ⚠️ При первом запуске Windows может предупредить, что издатель неизвестен.  
+        Это нормально — программа новая, но безопасна и с открытым кодом.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS для переключения темы -->
+  <script>
+    const htmlRoot = document.getElementById('html-root');
+    const themeToggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+
+    // Устанавливаем сохранённую тему
+    htmlRoot.setAttribute('data-theme', savedTheme);
+    updateThemeButton(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const current = htmlRoot.getAttribute('data-theme');
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      htmlRoot.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeButton(newTheme);
+    });
+
+    function updateThemeButton(theme) {
+      themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+    }
+  </script>
+</body>
+</html>
