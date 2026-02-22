@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cleaner Pro 2025 — Мощная очистка Windows</title>
+  <title>Protime1 Dev - Cleaner Pro 2025 & SHA Checker</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Иконка (опционально) -->
-  <!-- <link rel="icon" href="favicon.ico" /> -->
+  <meta name="description" content="Cleaner Pro 2025 - очистка Windows и Protime1 SHA Checker - проверка подлинности файлов">
 </head>
 <body>
   <!-- Навигация -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-logo">
-        ⚡ Cleaner<b>Pro</b>
+        ⚡ Protime1<span style="color: var(--accent)">Dev</span>
       </div>
       <div class="nav-right">
         <ul class="nav-menu">
           <li><a href="#products">Продукты</a></li>
-          <li><a href="#about">О разработчике</a></li>
-          <li><a href="#pro-team">Pro Team</a></li>
+          <li><a href="#sha-checker">SHA Checker</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#contact">Контакты</a></li>
         </ul>
         <button id="theme-toggle" class="theme-btn" aria-label="Переключить тему">
           🌙
@@ -31,77 +31,154 @@
   <!-- Герой -->
   <header class="hero">
     <div class="hero-content">
-      <h1>⚡ Cleaner Pro 2025</h1>
-      <p>Максимальная очистка, оптимизация и защита вашей Windows</p>
-      <a href="#products" class="btn-primary">Посмотреть продукты</a>
+      <h1>⚡ Protime1 SHA Checker</h1>
+      <p>Проверяйте подлинность любых файлов с помощью SHA256 хешей</p>
+      <a href="#sha-checker" class="btn-primary">Узнать больше</a>
     </div>
   </header>
 
   <!-- Продукты -->
   <section id="products" class="section">
     <div class="container">
-      <h2 class="section-title">Наши продукты</h2>
+      <h2 class="section-title">Мои проекты</h2>
       <div class="products-grid">
-        <!-- Cleaner PC -->
+        <!-- Cleaner Pro 2025 -->
         <div class="product-card">
           <div class="product-icon">🧹</div>
           <h3>Cleaner Pro 2025</h3>
-          <p>Удаляет временные файлы, кэш, мусор. Освобождает до 30+ ГБ.</p>
-          <a href="https://github.com/Protime1/CleanerPro2025/releases/download/v2.1.0/CleanerPro2026_Setup.exe" target="_blank" class="btn-download">
-            Скачать последнюю версию
+          <p>Мощная очистка Windows от мусора, временных файлов и кэша. Освобождает до 30+ ГБ.</p>
+          <a href="#" class="btn-download">
+            Скачать Cleaner Pro
           </a>
         </div>
-  <section id="products" class="section">
+
+        <!-- SHA Checker (ГЛАВНЫЙ ПРОДУКТ) -->
+        <div class="product-card">
+          <div class="product-icon">🔐</div>
+          <h3>Protime1 SHA Checker</h3>
+          <p>Программа для проверки подлинности файлов по SHA256 хешу. Сравнивает с базой на GitHub.</p>
+          <ul class="features-list">
+            <li>Проверка любых файлов (.exe, .py, .dll)</li>
+            <li>Сравнение с базой на GitHub</li>
+            <li>Добавление своих сертификатов</li>
+            <li>SHA256 хеширование</li>
+          </ul>
+          <a href="#sha-checker" class="btn-download">
+            Подробнее
+          </a>
+        </div>
+
+        <!-- Будущие проекты -->
+        <div class="product-card disabled">
+          <div class="product-icon">🔜</div>
+          <h3>В разработке</h3>
+          <p>Новые инструменты для оптимизации и безопасности</p>
+          <span class="soon-badge">Скоро</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHA CHECKER (подробно) -->
+  <section id="sha-checker" class="section" style="background: var(--bg-light);">
     <div class="container">
-      <h2 class="section-title">Наши продукты</h2>
-      <div class="products-grid">
-        <!-- Cleaner PC -->
-        <div class="product-card">
-          <div class="product-icon">🧹</div>
-          <h3>Cleaner Pro 2025</h3>
-          <p>Удаляет временные файлы, кэш, мусор. Освобождает до 30+ ГБ.</p>
-          <a href="https://github.com/Protime1/CleanerPro2025/releases/download/v2.1.0/CleanerPro2026_Setup.exe" target="_blank" class="btn-download">
-            Скачать последнюю версию
-          </a>
+      <h2 class="section-title">🔐 Protime1 SHA Checker</h2>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <h3 style="color: var(--accent); margin-bottom: 20px;">Что это?</h3>
+          <p style="margin-bottom: 20px;">Программа для проверки подлинности файлов. Она вычисляет SHA256 хеш файла и сравнивает его с базой сертификатов на GitHub.</p>
+          
+          <h3 style="color: var(--accent); margin: 30px 0 20px;">Как это работает:</h3>
+          <ul class="features-list">
+            <li>Вы выбираете файл для проверки</li>
+            <li>Программа вычисляет его SHA256 хеш</li>
+            <li>Ищет этот хеш в локальной базе и на GitHub</li>
+            <li>Если найден - показывает информацию о программе</li>
+            <li>Если нет - предлагает добавить новый сертификат</li>
+          </ul>
         </div>
+        
+        <div style="background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border);">
+          <h3 style="color: var(--accent); margin-bottom: 20px;">Пример сертификата:</h3>
+          <div class="hash-example">
+            <strong>Файл:</strong> CleanerPro2025.py<br>
+            <strong>SHA256:</strong> 2682e13ed66fd07e80e2f0f4c570872e013f414efda468b0de0ab01a0fb09475<br>
+            <strong>Программа:</strong> Cleaner Pro 2025<br>
+            <strong>Издатель:</strong> GameDev<br>
+            <strong>Версия:</strong> 1.0.0
+          </div>
+          <p style="color: var(--text-muted); margin: 20px 0;">При проверке файла программа покажет эти данные, подтверждая подлинность.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 50px; text-align: center;">
+        <h3 style="color: var(--accent); margin-bottom: 20px;">Скачать SHA Checker</h3>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="btn-primary">Скачать .exe (Windows)</a>
+          <a href="#" class="btn-secondary">Исходный код на GitHub</a>
+        </div>
+        <p style="margin-top: 20px; color: var(--text-muted);">Версия 2.0 | Последнее обновление: 22.02.2026</p>
+      </div>
+    </div>
+  </section>
 
   <!-- О разработчике -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">О разработчике</h2>
-      <p class="text-center">
-        Привет! Я независимый разработчик из России, создаю инструменты для оптимизации Windows с 2025 года.  
-        Моя цель — сделать мощные, безопасные и бесплатные утилиты для всех пользователей.
-      </p>
-      <p class="text-center">
-        Все мои проекты с открытым исходным кодом. Вы можете проверить каждый байт!
-      </p>
+      <h2 class="section-title">👨‍💻 О разработчике</h2>
+      <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <p class="text-center">
+          Привет! Я <strong>Protime1</strong> (GameDev), независимый разработчик из России. Создаю инструменты для оптимизации Windows и безопасности с 2025 года.
+        </p>
+        <p class="text-center" style="margin-top: 20px;">
+          <strong>Cleaner Pro 2025</strong> - программа для очистки системы от мусора<br>
+          <strong>SHA Checker</strong> - утилита для проверки подлинности файлов по SHA256 хешу
+        </p>
+        <p class="text-center" style="margin-top: 20px;">
+          Все мои проекты с открытым исходным кодом. Вы можете проверить каждый байт кода!
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Pro Team -->
-  <section id="pro-team" class="section">
+  <!-- Контакты -->
+  <section id="contact" class="section" style="background: var(--bg-light);">
     <div class="container">
-      <h2 class="section-title">Pro Team</h2>
-      <p class="text-center">
-        В данный момент проект разрабатывается одним человеком (мной).  
-        Но я открыт к сотрудничеству! Если вы дизайнер, тестировщик или разработчик — пишите в AlgoM.
-      </p>
+      <h2 class="section-title">📱 Контакты</h2>
+      <div style="max-width: 500px; margin: 0 auto;">
+        <div style="background: var(--card-bg); padding: 30px; border-radius: 16px; border: 1px solid var(--border);">
+          <p style="margin: 15px 0;"><strong>GitHub:</strong> <a href="https://github.com/Protime1" target="_blank" style="color: var(--accent);">github.com/Protime1</a></p>
+          <p style="margin: 15px 0;"><strong>AlgoM Chat:</strong> ID: 145 | Код: ce275d6d</p>
+          <p style="margin: 15px 0;"><strong>Email:</strong> protime1.dev@example.com</p>
+          <p style="margin: 15px 0;"><strong>Репозиторий Cleaner Pro:</strong> <a href="#" style="color: var(--accent);">GitHub/CleanerPro2025</a></p>
+          <p style="margin: 15px 0;"><strong>Репозиторий SHA Checker:</strong> <a href="#" style="color: var(--accent);">GitHub/SHA-Checker</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Подвал -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Cleaner Pro. Все права защищены.</p>
-      <p>
-        <a href="https://github.com/Protime1/CleanerPro2025" target="_blank">GitHub</a> |
-        <a href="https://mkgrsite-mesonger.mkgr-g.ru/#" target="_blank">AlgoM Chat ID: 145 Код: ce275d6d </a>
-      </p>
-      <p class="footer-note">
-        ⚠️ При первом запуске Windows может предупредить, что издатель неизвестен.  
-        Это нормально — программа новая, но безопасна и с открытым кодом.
-      </p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Protime1 Dev</h4>
+        <p>Разработка безопасных и полезных инструментов для Windows</p>
+      </div>
+      <div class="footer-section">
+        <h4>Проекты</h4>
+        <a href="#">Cleaner Pro 2025</a>
+        <a href="#">SHA Checker</a>
+      </div>
+      <div class="footer-section">
+        <h4>Контакты</h4>
+        <p>AlgoM: ID 145</p>
+        <p>GitHub: Protime1</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Protime1. Все права защищены.</p>
+      <p style="font-size: 0.9rem; margin-top: 10px;">SHA Checker v2.0 | Cleaner Pro 2025 v1.0.0</p>
     </div>
   </footer>
 
@@ -124,8 +201,18 @@
     });
 
     function updateThemeButton(theme) {
-      themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
     }
+
+    // Плавная прокрутка к якорям
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 </body>
 </html>
